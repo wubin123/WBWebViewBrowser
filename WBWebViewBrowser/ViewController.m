@@ -7,23 +7,22 @@
 //
 
 #import "ViewController.h"
-
+#import "WBWebViewController.h"
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
 
+#pragma mark - 生命周期 Life Circle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)gotoBrowser:(id)sender {
+    WBWebViewController *webVC = [[WBWebViewController alloc] init];
+    webVC.urlString = @"http://weibo.com/535478908";
+    webVC.isWKWebView = YES;
+    [self.navigationController pushViewController:webVC animated:YES];
 }
-
 
 @end

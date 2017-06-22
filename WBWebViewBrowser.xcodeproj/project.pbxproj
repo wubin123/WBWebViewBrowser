@@ -15,6 +15,8 @@
 		44851D221EFB8B5D004D7D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44851D201EFB8B5D004D7D24 /* LaunchScreen.storyboard */; };
 		44851D2D1EFB8B5E004D7D24 /* WBWebViewBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44851D2C1EFB8B5E004D7D24 /* WBWebViewBrowserTests.m */; };
 		44851D381EFB8B5E004D7D24 /* WBWebViewBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44851D371EFB8B5E004D7D24 /* WBWebViewBrowserUITests.m */; };
+		44851D4A1EFB8B8A004D7D24 /* WBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44851D481EFB8B8A004D7D24 /* WBWebViewController.m */; };
+		44851D4B1EFB8B8A004D7D24 /* WebViewImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 44851D491EFB8B8A004D7D24 /* WebViewImage.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		44851D331EFB8B5E004D7D24 /* WBWebViewBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBWebViewBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44851D371EFB8B5E004D7D24 /* WBWebViewBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBWebViewBrowserUITests.m; sourceTree = "<group>"; };
 		44851D391EFB8B5E004D7D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44851D471EFB8B8A004D7D24 /* WBWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBWebViewController.h; sourceTree = "<group>"; };
+		44851D481EFB8B8A004D7D24 /* WBWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBWebViewController.m; sourceTree = "<group>"; };
+		44851D491EFB8B8A004D7D24 /* WebViewImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WebViewImage.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		44851D061EFB8B5D004D7D24 = {
 			isa = PBXGroup;
 			children = (
+				44851D461EFB8B8A004D7D24 /* WBWebView */,
 				44851D111EFB8B5D004D7D24 /* WBWebViewBrowser */,
 				44851D2B1EFB8B5E004D7D24 /* WBWebViewBrowserTests */,
 				44851D361EFB8B5E004D7D24 /* WBWebViewBrowserUITests */,
@@ -138,6 +144,16 @@
 				44851D391EFB8B5E004D7D24 /* Info.plist */,
 			);
 			path = WBWebViewBrowserUITests;
+			sourceTree = "<group>";
+		};
+		44851D461EFB8B8A004D7D24 /* WBWebView */ = {
+			isa = PBXGroup;
+			children = (
+				44851D471EFB8B8A004D7D24 /* WBWebViewController.h */,
+				44851D481EFB8B8A004D7D24 /* WBWebViewController.m */,
+				44851D491EFB8B8A004D7D24 /* WebViewImage.bundle */,
+			);
+			path = WBWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +268,7 @@
 				44851D221EFB8B5D004D7D24 /* LaunchScreen.storyboard in Resources */,
 				44851D1F1EFB8B5D004D7D24 /* Assets.xcassets in Resources */,
 				44851D1D1EFB8B5D004D7D24 /* Main.storyboard in Resources */,
+				44851D4B1EFB8B8A004D7D24 /* WebViewImage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +295,7 @@
 			files = (
 				44851D1A1EFB8B5D004D7D24 /* ViewController.m in Sources */,
 				44851D171EFB8B5D004D7D24 /* AppDelegate.m in Sources */,
+				44851D4A1EFB8B8A004D7D24 /* WBWebViewController.m in Sources */,
 				44851D141EFB8B5D004D7D24 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
