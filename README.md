@@ -1,10 +1,18 @@
 # WBWebViewBrowser
 内置浏览器，调用简单方便，欢迎使用～
-#功能介绍
- - 可以自定义statusBar，也可以使用默认的
- - 动画类型暂时提供四种，都是简单的平移效果，如果有需求可以留言
- - 默认statusBar大概可分为四种
-  -  自定义图标、提示语
-  -  显示成功 （有默认图标）
-  -  显示失败（有默认图标）
-  -  显示加载状态
+# 功能介绍
+ - 下拉可以显示当前网页的host，类似QQ、微信等内置浏览器效果
+ - UIWebView、WKWebView的自由切换，默认用UIWebView
+ - 设置请求头Token
+ - 加载Html字符串
+# API说明
+```
+/** token,如不传则不会设置请求头 */
+@property (nonatomic,copy)                          NSString *token;
+/** 加载网页地址 */
+@property (nonatomic,copy)                          NSString *urlString;
+/** 加载HTMLString */
+@property (nonatomic,copy)                          NSString *HTMLString;
+/** UIWebView:NO WKWebView:YES 默认UIWebView */
+@property (nonatomic,assign,getter=isWKWebView)         BOOL  isWKWebView;
+```
