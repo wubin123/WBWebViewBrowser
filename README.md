@@ -1,5 +1,7 @@
 # WBWebViewBrowser
 内置浏览器，调用简单方便，欢迎使用～
+# 效果图
+![2.gif](http://upload-images.jianshu.io/upload_images/1508735-b231186410e0bd94.gif?imageMogr2/auto-orient/strip)
 # 功能介绍
  - 下拉可以显示当前网页的host，类似QQ、微信等内置浏览器效果
  - UIWebView、WKWebView的自由切换，默认用UIWebView
